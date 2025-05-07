@@ -1,0 +1,7 @@
+{
+  "name": "voumematar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
