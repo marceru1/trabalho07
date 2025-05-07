@@ -1,0 +1,20 @@
+
+<ion-content>
+  <div class="card-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Produtos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div *ngFor="let produto of produtos">
+          <p><strong>{{ produto.nome }}</strong></p>
+          <p><strong>Valor:</strong> R$ {{ produto.valor }}</p>
+          <p><strong>Categoria:</strong> {{ produto.categoria }}</p>
+          <ion-item lines="none"></ion-item> <!-- Linha para separar visualmente -->
+        </div>
+        <ion-button expand="block" (click)="navegar()">Voltar ao inicio</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
